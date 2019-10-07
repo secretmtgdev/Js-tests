@@ -1,0 +1,51 @@
+/** Soft reset on styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    position: relative;
+}
+
+/** Center the letter */
+#letter-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20em;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+}
+
+/** RULE i=4, ruleSet */
+.pulse {
+    animation: pulsate 5s linear infinite;
+}
+
+@keyframes pulsate {
+ 0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.3);
+ }
+ 33% {
+    box-shadow: 0 0 0 10em rgba(255, 0, 0, 0);
+
+ }
+ 66% {
+    box-shadow: 0 0 0 10em rgba(255, 0, 0, 0);
+
+ }
+ 100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+
+ } 
+}
