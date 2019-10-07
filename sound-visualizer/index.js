@@ -7,7 +7,7 @@ if(document.readyState === 'loading') {
 }
 
 function bindEvents() {
-    document.addEventListener('keydown', e => {
+    document.addEventListener('keypress', e => {
         e.preventDefault();
         document.querySelector('#letter-container').classList.add('pulse');
         displayKey(e);
